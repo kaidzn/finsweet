@@ -1,0 +1,95 @@
+#featured-blogs {
+  padding-top: 100px;
+  .container {
+    .topic {
+      display: flex;
+      justify-content: center;
+    }
+    .box {
+      display: flex;
+      padding-top: 50px;
+      gap: 32px;
+      .bg-box {
+        height: 450px;
+        width: 50%;
+        background-image: linear-gradient(
+            rgba(30, 30, 30, 0.9),
+            rgba(30, 30, 30, 0.9)
+          ),
+          url("../assets/blog/big-image.png");
+        background-size: cover;
+        overflow: hidden;
+        .article-title {
+          padding: 16px 32px;
+          text-transform: uppercase;
+          font-family: "Poppins";
+          position: relative;
+          background: rgba(255, 196, 146, 0.47);
+          cursor: pointer;
+          top: 15.8px;
+        }
+        .big-word {
+          padding: 180px 80px 50px 40px;
+          width: 70%;
+        }
+        .author {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 40px;
+          .author-des {
+            display: flex;
+            .author-text {
+              .author-name {
+                font-size: 16px;
+              }
+              .date {
+                font-size: 13px;
+                color: #b8b8b8;
+              }
+            }
+            img {
+              width: 40px;
+              height: 40px;
+              margin-right: 10px;
+            }
+          }
+          .read-more {
+            cursor: pointer;
+          }
+          .read-more:hover {
+            color: rgba(255, 196, 146, 0.47);
+          }
+        }
+      }
+      .sm-box {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        gap: 10px;
+        .item {
+          display: flex;
+          width: 80%;
+          gap: 20px;
+          align-items: center;
+          .sm-img {
+            height: 144px;
+            width: 132px;
+            flex: 0 0 auto;
+            overflow: hidden;
+          }
+          .sm-text {
+            .text-topic {
+              font-size: 20px;
+              margin-bottom: 20px;
+            }
+            .text-base {
+              font-size: 16px;
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+}

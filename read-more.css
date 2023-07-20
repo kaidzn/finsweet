@@ -1,0 +1,49 @@
+#core {
+  .container {
+    display: flex;
+    flex-direction: column;
+    font-family: "Playfair Display", serif;
+    .author {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 96px 0 50px 0;
+      gap: 20px;
+      .date {
+        color: #b8b8b8;
+      }
+    }
+    .large-title {
+      display: flex;
+      width: 85%;
+      text-align: center;
+      margin-bottom: 90px;
+      p {
+        display: flex;
+        margin-left: 200px;
+      }
+    }
+    .text-title {
+      display: flex;
+      text-align: start;
+      width: 65%;
+      margin-left: 200px;
+      padding: 80px 0 40px 0;
+    }
+    .text-parapgraph {
+      width: 65%;
+      margin-left: 200px;
+      .text-base {
+        padding: 15px 0;
+      }
+      .title-sm {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 20px 0;
+      }
+      .text-base:nth-child(5) {
+        width: 50%;
+      }
+    }
+  }
+}

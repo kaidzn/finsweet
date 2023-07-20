@@ -1,0 +1,29 @@
+#know-more {
+  .title-large {
+    width: 78%;
+    font-family: "Playfair Display", serif;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .one {
+      display: flex;
+      gap: 20px;
+    }
+  }
+  input {
+    background-color: #19161b;
+    border: solid 2px #2a252d;
+    height: 50px;
+    width: 300px;
+    color: #fff;
+    padding: 0 0 0 20px;
+    font-size: 20px;
+  }
+  .message-input {
+    width: 620px;
+    background-color: #19161b;
+    padding: 15px 10px 100px 10px;
+  }
+}

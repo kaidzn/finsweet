@@ -1,0 +1,245 @@
+@media (min-width: 576px) {
+  .menu-icon {
+    display: none;
+  }
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .menu-icon {
+    display: none;
+  }
+  .container {
+    max-width: 960px;
+  }
+
+  #header {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    .navbar {
+      display: flex;
+      column-gap: 78px;
+
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover {
+        color: #ffb87a;
+      }
+      .clone {
+        margin-left: 150px;
+        color: #ffc492;
+      }
+      .clone:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  #home {
+    display: flex;
+    padding-top: 50px;
+    margin-bottom: 100px;
+    .container {
+      display: flex;
+      flex-direction: row;
+      gap: 150px;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      gap: 15px;
+      .title-big {
+        font-family: "Playfair Display", serif;
+        font-size: 45px;
+      }
+      .text-base {
+        font-size: 14px;
+      }
+    }
+    .orange-btn {
+      width: 140px;
+      height: 30px;
+      font-size: 14px;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      li {
+        list-style: none;
+        .header-info {
+          font-family: "Playfair Display", serif;
+          font-weight: 200;
+          font-size: 18px;
+        }
+        .info-text {
+          color: #b8b8b8;
+          font-size: 14px;
+        }
+      }
+    }
+    .right {
+      max-width: 100%;
+      overflow: hidden;
+    }
+  }
+  #know-more {
+    .orange-btn {
+      margin-left: 300px;
+    }
+    .subheading {
+      margin-left: -100px;
+    }
+    display: flex;
+    .container {
+      height: 600px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 150px;
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-left: 100px;
+        width: 100%;
+        .title-large {
+          display: flex;
+          text-align: center;
+          justify-content: center;
+        }
+        ul {
+          display: flex;
+          flex-direction: row;
+          list-style: none;
+          gap: 40px;
+
+          .title {
+            display: flex;
+            align-items: end;
+            gap: 10px;
+            padding-bottom: 20px;
+            p {
+              font-weight: 500;
+              font-size: 20px;
+            }
+          }
+          .l-text {
+            padding-bottom: 20px;
+          }
+          .l-text,
+          .long-text {
+            color: #b8b8b8;
+            font-size: 15px;
+            padding-bottom: 20px;
+          }
+        }
+      }
+      .right {
+        .tw-imgs {
+          .tw-img1,
+          .tw-img2 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .menu-icon {
+    display: none;
+  }
+  .container {
+    max-width: 1140px;
+  }
+  .subheading {
+    margin-top: 50px;
+  }
+  #header {
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    .navbar {
+      display: flex;
+      column-gap: 70px;
+
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 45px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover {
+        color: #ffb87a;
+      }
+      .clone {
+        margin-left: 220px;
+        color: #ffc492;
+      }
+      .clone:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+@media (min-width: 1400px) {
+  .menu-icon {
+    display: none;
+  }
+  .container {
+    max-width: 1320px;
+  }
+  #header {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    .navbar {
+      display: flex;
+      column-gap: 150px;
+
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 50px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover {
+        color: #ffb87a;
+      }
+      .clone {
+        margin-left: 208px;
+        color: #ffc492;
+      }
+      .clone:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -12,7 +12,9 @@
     <header id="header">
       <div class="container">
         <nav class="navbar">
-          <img src="assets/navbar/logo.png" height="19.42px" width="96px" />
+          <a href="#home" class="logo">
+            <img src="assets/navbar/logo.png" height="19.42px" width="96px" />
+          </a>
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#menu">Menu</a></li>
@@ -22,6 +24,20 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
           <a href="#clone" class="clone">Clone Project &rarr;</a>
+          <a class="menu-btn">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 8V6H21V8H3Z"
+                fill="white"
+              />
+            </svg>
+          </a>
         </nav>
       </div>
     </header>
@@ -53,26 +69,25 @@
             </ul>
           </div>
           <div class="right">
-            <img
-              src="assets/header/right-image.png"
-              height="500px"
-              width="522px"
-            />
+            <img src="assets/header/right-image.png" />
           </div>
         </div>
       </section>
       <section id="know-more">
         <div class="container">
           <div class="left">
-            <div class="subheading">
-              <span> Know more about us</span>
+            <span class="subheading"> Know more about us</span>
+            <div class="know-more-title">
+              <p class="title-large">
+                We source sustainable & line caught Foods
+              </p>
+              <p class="text-base">
+                Edit this text to make it your own. To edit, simply click
+                directly on the text to start adding your own words. You can
+                move the text by dragging and dropping the text anywhere on the
+                page.
+              </p>
             </div>
-            <p class="title-large">We source sustainable & line caught Foods</p>
-            <p class="sm-text">
-              Edit this text to make it your own. To edit, simply click directly
-              on the text to start adding your own words. You can move the text
-              by dragging and dropping the text anywhere on the page.
-            </p>
             <ul class="features">
               <li>
                 <div class="title">
@@ -285,7 +300,28 @@
           </div>
         </div>
         <div class="video-side">
-          <iframe src="assets/quote/Bugin_Holding.mp4" frameborder="0"></iframe>
+          <button
+            type="button"
+            class="btn btn-primary video-btn"
+            data-toggle="modal"
+            data-src="https://www.youtube.com/embed/s0RI4IXKE_o"
+            data-target="#myModal"
+          >
+            <svg
+              class="play-btn"
+              width="60"
+              height="60"
+              viewBox="0 0 60 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                id="Play"
+                d="M29.9999 60C13.4314 60 0 46.5686 0 30.0001C0 13.4316 13.4314 0.000125885 29.9999 0.000125885C46.5684 0.000125885 59.9999 13.4316 59.9999 30.0001C59.9823 46.5612 46.5612 59.9823 29.9999 60ZM42.6341 29.0442C42.4264 28.6276 42.0888 28.2898 41.6721 28.0822V28.0715L24.5293 19.5C23.4705 18.9711 22.1836 19.4003 21.6545 20.459C21.5041 20.76 21.4266 21.0922 21.4285 21.4286V38.5714C21.428 39.7549 22.3869 40.7147 23.5704 40.7153C23.9032 40.7154 24.2316 40.6381 24.5293 40.4893L41.6721 31.9178C42.7313 31.39 43.1621 30.1034 42.6341 29.0442Z"
+                fill="white"
+              />
+            </svg>
+          </button>
         </div>
       </section>
       <section id="blog">
@@ -345,7 +381,7 @@
             </div>
           </div>
           <div class="map">
-            <iframe
+            <!-- <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5874.812760075806!2d76.9065479321391!3d43.23179169596594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883692f027581ad%3A0x2426740f56437e63!2z0KXQsNC70YvSm9Cw0YDQsNC70YvSmyDQsNKb0L_QsNGA0LDRgtGC0YvSmyDRgtC10YXQvdC-0LvQvtCz0LjRj9C70LDRgCDRg9C90LjQstC10YDRgdC40YLQtdGC0ZY!5e1!3m2!1sen!2skz!4v1689067900364!5m2!1sen!2skz"
               width="850"
               height="450"
@@ -353,7 +389,9 @@
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+            ></iframe> -->
+
+            <div id="map" style="width: 100%; height: 100%"></div>
           </div>
         </div>
       </section>
@@ -371,7 +409,7 @@
               <li><a href="about.html">About US</a></li>
               <li><a href="story.html">Our Story</a></li>
               <li><a href="blog.html">Blog</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -401,5 +439,62 @@
         </div>
       </div>
     </section>
+
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script type="text/javascript">
+      var map;
+
+      DG.then(function () {
+        map = DG.map("map", {
+          center: [43.241115, 76.923605],
+          zoom: 13,
+        });
+
+        DG.marker([43.241115, 76.923605])
+          .addTo(map)
+          .bindPopup("Вы кликнули по мне!");
+      });
+      $(document).ready(function () {
+        // Gets the video src from the data-src on each button
+
+        var $videoSrc;
+        $(".video-btn").click(function () {
+          $videoSrc = $(this).data("src");
+        });
+        console.log($videoSrc);
+
+        // when the modal is opened autoplay it
+        $("#myModal").on("shown.bs.modal", function (e) {
+          // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+          $("#video").attr(
+            "src",
+            $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+          );
+        });
+
+        // stop playing the youtube video when I close the modal
+        $("#myModal").on("hide.bs.modal", function (e) {
+          // a poor man's stop video
+          $("#video").attr("src", $videoSrc);
+        });
+
+        // document ready
+      });
+
+      /******************************************************************/
+      /*******************menu button***********************************/
+      /****************************************************************/
+      const mobileBtn = document.getElementById("mobile-cta");
+      nav = document.querySelector("nav");
+      mobileBtnExit = document.getElementById("mobile-exit");
+
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
+
+      mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+    </script>
   </body>
 </html>

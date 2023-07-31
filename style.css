@@ -14,12 +14,21 @@ body {
 
 /**************************************************************************/
 /******************************COMMON CLASSES*****************************/
+// Small text color: #b8b8b8
+// Background color: #19161b
+// Subheading color: #ffb87a
+// Orange button hover color: #eaab74
+// clone color: #ffc492
+// Menu item backgroiund color: #1f1d21
+// The Author underline color: #5f5f5f
+
 .container {
   margin: 0 auto;
 }
 
 .subheading {
   position: relative;
+  margin-bottom: 50px;
   font-family: "Playfair Display", serif;
   align-items: center;
   color: #ffb87a;
@@ -45,7 +54,7 @@ body {
   justify-content: center;
   color: #19161b;
   font-weight: 500;
-  transition: 0.8s;
+  transition: 0.6s;
 
   &:hover {
     border: solid #eaab74 3px;
@@ -92,7 +101,6 @@ body {
 
 .title {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 30px;
   padding-bottom: 50px;
@@ -109,45 +117,62 @@ body {
 /**************************************************************************/
 
 #header {
-  height: 100px;
-  display: flex;
-  align-items: center;
-  .navbar {
-    display: flex;
-    gap: 50px;
-
+  padding: 30px 0;
+  nav {
+    display: block;
+    position: fixed;
+    text-align: end;
+    border: #fff solid 1px;
+    width: 60%;
+    height: 100vh;
+    padding: 30px;
+    transform: translateX(100%);
+    top: 0;
+    right: 0;
+    background: #1f1d21;
+    z-index: 999;
+    transition: transform 0.5s ease-in-out;
     ul {
-      display: flex;
-      list-style: none;
-      gap: 50px;
+      display: block;
+      text-align: end;
+      li {
+        list-style: none;
+        a {
+          color: white;
+          text-decoration: none;
+          &:hover {
+            color: #eaab74;
+          }
+        }
+      }
     }
-    a {
+    a.clone {
       text-decoration: none;
+      color: #ffb87a;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .close-btn {
       color: white;
-    }
-    .clone {
-      margin-left: 208px;
-      color: #ffc492;
-    }
-    .clone:hover {
-      text-decoration: underline;
     }
   }
 }
 
 #home {
   display: flex;
-  height: 650px;
   padding-top: 50px;
   .container {
     display: flex;
     flex-direction: row;
+    gap: 150px;
   }
   .left {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 50%;
-    gap: 10px;
+    gap: 25px;
     .title-big {
       font-family: "Playfair Display", serif;
     }
@@ -162,9 +187,11 @@ body {
       .header-info {
         font-family: "Playfair Display", serif;
         font-weight: 200;
+        font-size: 18px;
       }
       .info-text {
         color: #b8b8b8;
+        font-size: 14px;
       }
     }
   }
@@ -178,16 +205,15 @@ body {
   display: flex;
   .container {
     margin: 0 auto;
-    height: 600px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 150px;
     .left {
       display: flex;
       flex-direction: column;
       gap: 30px;
-      width: 50%;
+      width: 55%;
 
       ul {
         display: flex;
@@ -247,7 +273,6 @@ body {
     .serving-features {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
       column-gap: 1px;
       .feature {
         width: 100%;
@@ -397,6 +422,8 @@ body {
     }
     .map {
       display: flex;
+      width: 100%;
+      height: 400px;
     }
   }
 }

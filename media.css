@@ -5,17 +5,50 @@
   }
   #header {
     .container {
-      width: 90%;
-      margin: 0 auto;
       display: flex;
+      width: 90%;
       justify-content: space-between;
-      .menu-btn,
-      .close-btn {
-        cursor: pointer;
+      nav {
+        display: block;
+        position: fixed;
+        text-align: end;
+        width: 50%;
+        height: 100vh;
+        padding: 30px;
+        transform: translateX(100%);
+        top: 0;
+        right: 0;
+        background: #1f1d21;
+        z-index: 999;
+        transition: transform 0.5s ease-in-out;
+        ul {
+          display: block;
+          text-align: end;
+          li {
+            list-style: none;
+            a {
+              color: white;
+              text-decoration: none;
+              &:hover {
+                color: #eaab74;
+              }
+            }
+          }
+        }
+        a.clone {
+          text-decoration: none;
+          color: #ffb87a;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        .close-btn {
+          color: white;
+        }
       }
-    }
-    .open-nav {
-      transform: translateX(0%);
+      .open-nav {
+        transform: translateX(0%);
+      }
     }
   }
 
@@ -222,6 +255,51 @@
       }
     }
   }
+  #featured-blogs {
+    .container {
+      .box {
+        flex-direction: column;
+        .bg-box {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 100%;
+          .article-title {
+            width: 150px;
+            height: 50px;
+            top: 0;
+          }
+          .big-word {
+            font-size: 30px;
+            padding: 20px;
+          }
+          .author {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            padding-bottom: 10px;
+            margin-left: 20px;
+          }
+        }
+        .sm-box {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          gap: 5px;
+          .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #1f1d21;
+            width: 100%;
+            .sm-text {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 561px) and (max-width: 767px) {
@@ -235,16 +313,49 @@
   #header {
     .container {
       width: 90%;
-      margin: 0 auto;
       display: flex;
       justify-content: space-between;
-      .menu-btn,
-      .close-btn {
-        cursor: pointer;
+      nav {
+        display: block;
+        position: fixed;
+        text-align: end;
+        width: 50%;
+        height: 100vh;
+        padding: 30px;
+        transform: translateX(100%);
+        top: 0;
+        right: 0;
+        background: #1f1d21;
+        z-index: 999;
+        transition: transform 0.5s ease-in-out;
+        ul {
+          display: block;
+          text-align: end;
+          li {
+            list-style: none;
+            a {
+              color: white;
+              text-decoration: none;
+              &:hover {
+                color: #eaab74;
+              }
+            }
+          }
+        }
+        a.clone {
+          text-decoration: none;
+          color: #ffb87a;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        .close-btn {
+          color: white;
+        }
       }
-    }
-    .open-nav {
-      transform: translateX(0%);
+      .open-nav {
+        transform: translateX(0%);
+      }
     }
   }
 
@@ -452,20 +563,42 @@
   #header {
     .container {
       display: flex;
-      .navbar {
-        display: flex;
+      width: 90%;
+      justify-content: space-between;
+      align-items: center;
+      nav {
+        display: flex !important;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        padding: 0;
         transform: translateX(0%);
         background: #19161b;
-        border: none;
         z-index: -1;
-        width: 100%;
-        height: 100px;
         ul {
-          display: flex;
-          color: #fff;
+          display: flex !important;
+          text-align: center;
+          li {
+            list-style: none;
+            a {
+              color: white;
+              text-decoration: none;
+              &:hover {
+                color: #eaab74;
+              }
+            }
+          }
         }
-        a {
-          color: #fff;
+        a.clone {
+          text-decoration: none;
+          color: #ffb87a;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        .close-btn {
+          color: white;
         }
       }
     }

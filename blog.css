@@ -9,6 +9,34 @@
       display: flex;
       padding-top: 50px;
       gap: 32px;
+      .sm-box {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        gap: 10px;
+      }
+      .item {
+        display: flex;
+        width: 80%;
+        gap: 20px;
+        align-items: center;
+        .sm-img {
+          height: 144px;
+          width: 132px;
+          flex: 0 0 auto;
+          overflow: hidden;
+        }
+        .sm-text {
+          .text-topic {
+            font-size: 20px;
+            margin-bottom: 20px;
+          }
+          .text-base {
+            font-size: 16px;
+            line-height: normal;
+          }
+        }
+      }
       .bg-box {
         height: 450px;
         width: 50%;
@@ -35,8 +63,9 @@
         .author {
           display: flex;
           align-items: center;
+          justify-content: center;
           justify-content: space-between;
-          padding: 0 40px;
+          width: 90%;
           .author-des {
             display: flex;
             .author-text {
@@ -54,42 +83,20 @@
               margin-right: 10px;
             }
           }
-          .read-more {
-            cursor: pointer;
-          }
-          .read-more:hover {
-            color: rgba(255, 196, 146, 0.47);
-          }
         }
-      }
-      .sm-box {
-        display: flex;
-        flex-direction: column;
-        width: 60%;
-        gap: 10px;
-        .item {
-          display: flex;
-          width: 80%;
-          gap: 20px;
-          align-items: center;
-          .sm-img {
-            height: 144px;
-            width: 132px;
-            flex: 0 0 auto;
-            overflow: hidden;
+        .read-more {
+          a {
+            color: white;
+            text-decoration: none;
           }
-          .sm-text {
-            .text-topic {
-              font-size: 20px;
-              margin-bottom: 20px;
-            }
-            .text-base {
-              font-size: 16px;
-              line-height: normal;
-            }
+          a:hover {
+            text-decoration: underline;
+            color: #eaab74;
           }
         }
       }
     }
   }
 }
+
+@import "./blocks/media";

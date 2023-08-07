@@ -126,7 +126,8 @@ body {
   .container {
     display: flex;
     flex-direction: row;
-    gap: 150px;
+    align-items: center;
+    gap: 10px;
   }
   .left {
     display: flex;
@@ -157,56 +158,8 @@ body {
     }
   }
   .right {
+    max-width: 100%;
     overflow: hidden;
-  }
-
-  .swiper-slide {
-    height: 600px;
-    width: 500px;
-    overflow: hidden;
-  }
-  .outside-slide {
-    width: 100%;
-  }
-
-  .swiper-slide {
-    display: flex;
-    object-fit: cover;
-    overflow: hidden;
-  }
-
-  .swiper-container {
-    width: 100%;
-  }
-
-  .outside-slide {
-    width: 700px;
-    height: 600px;
-    overflow: hidden;
-    object-fit: cover;
-  }
-  .swiper-slide img {
-    overflow: hidden;
-    background-size: cover;
-    object-fit: cover;
-  }
-
-  .slide-container img {
-    width: 50%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .buttons {
-    position: relative;
-    bottom: 580px;
-  }
-
-  .pagination {
-    position: relative;
-    top: 0;
-  }
-  .swiper-pagination-bullet {
-    background-color: #6f4e37 !important;
   }
 }
 

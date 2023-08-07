@@ -14,85 +14,87 @@
   <body>
     <header id="header">
       <div class="container">
-        <a href="#home" class="logo">
-          <img src="assets/header/Logo.svg" height="19.42px" width="96px" />
-        </a>
-        <svg
-          class="menu-btn"
-          id="mobile-cta"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 8V6H21V8H3Z"
-            fill="white"
-          />
-        </svg>
-        <nav class="navbar open-nav">
+        <div class="lm-container">
+          <a href="#home" class="logo">
+            <img src="assets/header/Logo.svg" height="19.42px" width="96px" />
+          </a>
           <svg
-            class="close-btn"
-            id="close-btn"
+            class="menu-btn"
+            id="mobile-cta"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0,0,256,256"
-            width="32px"
-            height="32px"
-            fill-rule="nonzero"
           >
-            <g
-              fill="#1f1d21"
-              fill-rule="nonzero"
-              stroke="none"
-              stroke-width="1"
-              stroke-linecap="butt"
-              stroke-linejoin="miter"
-              stroke-miterlimit="10"
-              stroke-dasharray=""
-              stroke-dashoffset="0"
-              font-family="none"
-              font-weight="none"
-              font-size="none"
-              text-anchor="none"
-              style="mix-blend-mode: normal"
-            >
-              <path d="M0,256v-256h256v256z" id="bgRectangle"></path>
-            </g>
-            <g
-              fill="#ffffff"
-              fill-rule="nonzero"
-              stroke="none"
-              stroke-width="1"
-              stroke-linecap="butt"
-              stroke-linejoin="miter"
-              stroke-miterlimit="10"
-              stroke-dasharray=""
-              stroke-dashoffset="0"
-              font-family="none"
-              font-weight="none"
-              font-size="none"
-              text-anchor="none"
-              style="mix-blend-mode: normal"
-            >
-              <g transform="scale(8,8)">
-                <path
-                  d="M7.21875,5.78125l-1.4375,1.4375l8.78125,8.78125l-8.78125,8.78125l1.4375,1.4375l8.78125,-8.78125l8.78125,8.78125l1.4375,-1.4375l-8.78125,-8.78125l8.78125,-8.78125l-1.4375,-1.4375l-8.78125,8.78125z"
-                ></path>
-              </g>
-            </g>
+            <path
+              d="M3 18V16H21V18H3ZM3 13V11H21V13H3ZM3 8V6H21V8H3Z"
+              fill="white"
+            />
           </svg>
-          <ul>
-            <li><a class="close-btn" href="#home">Home</a></li>
-            <li><a class="close-btn" href="#menu">Menu</a></li>
-            <li><a class="close-btn" href="#know-more">About Us</a></li>
-            <li><a class="close-btn" href="#story">Our Story</a></li>
-            <li><a class="close-btn" href="#blog">Blog</a></li>
-            <li><a class="close-btn" href="#contact">Contact</a></li>
-          </ul>
-          <a href="#clone" class="clone close-btn">Clone Project &rarr;</a>
-        </nav>
+          <nav class="navbar open-nav">
+            <svg
+              class="close-btn"
+              id="close-btn"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0,0,256,256"
+              width="32px"
+              height="32px"
+              fill-rule="nonzero"
+            >
+              <g
+                fill="#1f1d21"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal"
+              >
+                <path d="M0,256v-256h256v256z" id="bgRectangle"></path>
+              </g>
+              <g
+                fill="#ffffff"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal"
+              >
+                <g transform="scale(8,8)">
+                  <path
+                    d="M7.21875,5.78125l-1.4375,1.4375l8.78125,8.78125l-8.78125,8.78125l1.4375,1.4375l8.78125,-8.78125l8.78125,8.78125l1.4375,-1.4375l-8.78125,-8.78125l8.78125,-8.78125l-1.4375,-1.4375l-8.78125,8.78125z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#know-more">About Us</a></li>
+              <li><a href="#story">Our Story</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <a href="#clone" class="clone">Clone Project &rarr;</a>
       </div>
     </header>
     <main>
@@ -130,30 +132,26 @@
                   <div class="swiper-slide">
                     <img
                       src="assets/home/right-image1.png"
-                      width="700px"
-                      height="600px"
+                      class="item-image"
                     />
                   </div>
                   <!-- Slide 2 -->
                   <div class="swiper-slide">
                     <img
                       src="assets/home/right-image2.jpg"
-                      width="700px"
-                      height="600px"
+                      class="item-image"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
                       src="assets/home/right-inage6.jpg"
-                      width="700px"
-                      height="600px"
+                      class="item-image"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
                       src="assets/home/right-image4.jpg"
-                      width="700px"
-                      height="600px"
+                      class="item-image"
                     />
                   </div>
                 </div>
@@ -566,8 +564,7 @@
         centeredSlides: true,
         loop: true,
         autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
+          delay: 2000,
         },
         pagination: {
           el: ".swiper-pagination",
@@ -576,9 +573,6 @@
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
-        },
-        Image: {
-          height: "auto",
         },
       });
     </script>

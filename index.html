@@ -562,6 +562,7 @@
       var swiper = new Swiper(".swiper-container", {
         spaceBetween: 30,
         centeredSlides: true,
+        speed: 1000,
         loop: true,
         autoplay: {
           delay: 2000,
@@ -574,6 +575,20 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+      });
+
+      $(document).ready(function () {
+        $("nav a").on("click", function (e) {
+          e.preventDefault(); // Prevent default link behavior
+
+          var target = $(this).attr("href"); // Get target section ID
+          $("html, body").animate(
+            {
+              scrollTop: $(target).offset().top, // Smooth scroll to the target section
+            },
+            1000
+          ); // Set the duration of the animation (in milliseconds)
+        });
       });
     </script>
   </body>

@@ -3,10 +3,8 @@
     margin: 0 auto;
     max-width: 560px;
   }
-  body {
-    border: solid red 1px;
-  }
-  .clone {
+  .clone,
+  .second-header {
     display: none;
   }
   .menu-btn,
@@ -375,15 +373,13 @@
     margin: 0 auto;
     max-width: 767px;
   }
-  body {
-    border: 1px solid red;
-  }
   .menu-btn,
   .close-btn {
     cursor: pointer;
   }
 
-  .clone {
+  .clone,
+  .second-header {
     display: none;
   }
   #header {
@@ -690,7 +686,8 @@
 
 @media (min-width: 768px) {
   .menu-btn,
-  .close-btn {
+  .close-btn,
+  .first-header {
     display: none;
   }
 
@@ -953,6 +950,11 @@
       height: 400px;
       background-image: url("/assets/quote/bg-img-video-side.png");
       overflow: hidden;
+    }
+  }
+  #contact {
+    .map {
+      width: 60%;
     }
   }
   #bottom {
